@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    /*-------------
+        Color 
+    -------------*/
+    --main-bg-color: rgba(255, 143, 14, 0.096);
+    --primary-color: hsla(32, 100%, 53%, 1);
+    --white: #fff;
+    /*-------------
+        size 
+    -------------*/
+    --fs-1: 1rem;
+    --fs-2: 1.1rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.5rem;
+
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+
+
+    --h1: 2.8rem;
+    --h2: 3rem;
+    --h3: 4rem;
+
+    --spacing-1: 1rem;
+    --spacing-2: 2rem;
+    --spacing-3: 3rem;
+    --spacing-4: 4rem;
+    --spacing-5: 5rem;
+    --spacing-6: 6rem;
+}
+    /*-------------
+    Common styl
+    -------------*/
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .h1 {
+        font-size: var(--h1);
+        font-weight: var(--fw-700);
+    }
+
+    .mt-1 {
+        margin-top: var(--spacing-1);
+    }
+    .mt-2 {
+        margin-top: var(--spacing-2);
+    }
+    .mt-3 {
+        margin-top: var(--spacing-3);
+    }
+    .mt-4 {
+        margin-top: var(--spacing-4);
+    }
+    .mt-5 {
+        margin-top: var(--spacing-5);
+    }
+    .mt-6 {
+        margin-top: var(--spacing-6);
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+    /*--------------
+        Header 
+    ---------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+header  nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+    /*--------------
+        main
+    ---------------*/
+
