@@ -1,143 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap');
 
-:root {
-    /*-------------
-        Color 
-    -------------*/
-    --main-bg-color: rgba(255, 143, 14, 0.096);
-    --primary-color: hsla(32, 100%, 53%, 1);
-    --white: #fff;
-    --gray: rgba(150, 150, 150, 0.507);
-    --paragraph-color-1:hsla(0, 0%, 45%, 1);
-    /*-------------
-        size 
-    -------------*/
-    --fs-1: 1rem;
-    --fs-2: 1.1rem;
-    --fs-3: 1.25rem;
-    --fs-4: 1.5rem;
-    --fs-8: 8rem;
 
-    --fw-700: 700;
-    --fw-600: 600;
-    --fw-500: 500;
-
-
-    --h1: 2.8rem;
-    --h2: 3rem;
-    --h3: 4rem;
-
-    --spacing-1: 1rem;
-    --spacing-1p5: 1.5rem;
-    --spacing-2p5: 2.5rem;
-    --spacing-2: 2rem;
-    --spacing-3: 3rem;
-    --spacing-4: 4rem;
-    --spacing-5: 5rem;
-    --spacing-6: 6rem;
-    --spacing-8: 8rem;
-}
-    /*-------------
-    Common styl start
-    -------------*/
-    .container {
-        width: 1440px;
-        margin: 0 auto;
-    }
-
-    .fs-4 {
-        font-size: var(--fs-4);
-    }
-
-    .h1 {
-        font-size: var(--h1);
-        font-weight: var(--fw-700);
-    }
-    .h3 {
-        font-size: var(--h3);
-        font-weight: var(--fw-700);
-    }
-    .h4 {
-        font-size: var(--h);
-        font-weight: var(--fw-700);
-    }
-
-    .mt-1 {
-        margin-top: var(--spacing-1);
-    }
-    .mt-2 {
-        margin-top: var(--spacing-2);
-    }
-    .mt-3 {
-        margin-top: var(--spacing-3);
-    }
-    .mt-4 {
-        margin-top: var(--spacing-4);
-    }
-    .mt-5 {
-        margin-top: var(--spacing-5);
-    }
-    .mt-6 {
-        margin-top: var(--spacing-6);
-    }
-    .mt-8 {
-        margin-top: var(--spacing-8);
-    }
-
-    .mb-1 {
-        margin-bottom: var(--spacing-1);
-    }
-    .mb-2 {
-        margin-bottom: var(--spacing-2);
-    }
-    .mb-2p5 {
-        margin-bottom: var(--spacing-2p5);
-    }
-    .mb-3 {
-        margin-bottom: var(--spacing-3);
-    }
-    .mb-4 {
-        margin-bottom: var(--spacing-4);
-    }
-    .mb-5 {
-        margin-bottom: var(--spacing-5);
-    }
-    .mb-6 {
-        margin-bottom: var(--spacing-6);
-    }
-    .m-center {
-        margin: 0 auto;
-    }
-
-    .w-6 {
-        width: 60%;
-    }
-    .w-8 {
-        width: 80%;
-    }
-
-    .paragraph-style-1 {
-        font-size: var(--fs-1);
-        line-height: 1.5rem;
-        color: var(--paragraph-color-1);
-    }
-
-    .text-align-center {
-        text-align: center;
-    }
-
-    .btn {
-        border: none;
-        border-radius: 5px;
-        background-color: var(--primary-color);
-        color: var(--white);
-        font-size: var(--fs-2);
-        font-weight: var(--fw-500);
-        padding: 20px 25px;
-    }
-    /*-----------------
-    Common styl end
-    ------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -149,6 +12,7 @@ body {
     height: 100vh;
     font-family: 'Work Sans', sans-serif;
 }
+
 
 body p {
     font-size: var(--fs-1);
@@ -186,11 +50,20 @@ header nav ul li {
         main
     ---------------*/
 
+    /*-----------------
+    primary-container 
+    ------------------ */
+
 .primary-container {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-3);
 }
+
+.bannar-img img{
+    width: 100%;
+}
+
 
     /* -------------------------
         secondary container
@@ -249,20 +122,121 @@ header nav ul li {
     left: 45%;
 }
 
+    /* -------------------------
+        Achievement container
+    -------------------------- */
+
+.achievement-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.achievement-icons .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+.achievement-icons .icon:hover {
+    background-color: antiquewhite;
+    transform: scale(1.1);
+    transition: 0.3s ;
+}
+
+.achievement-icons .icon .number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(72, 72, 72);
+}
+
+.achievement-icons .icon .achievement-title {
+    font-size: var(--fs-3);
+}
+    /* -------------------------
+        Sponsor container
+    -------------------------- */
+.sponsors-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sponsors-container .sponsor--logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sponsor--logo img {
+    filter: grayscale(100%);
+}
+
+    /* -------------------------
+            footer
+    -------------------------- */
+footer {
+    height: 245px;
+}
+
+footer p {
+    background-color: var(--main-bg-color);
+    padding: 2.5rem 0;
+    border-radius: 5px;
+}
 
     /* -------------------------
         Media query
     -------------------------- */
 @media screen and (max-width: 576px) {
+
+header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
 .container {
     width: 576px;
     background-color: white;
     }
 
+.primary-container{
+    flex-direction: column;
+}
+
 .secondary-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: var(--spacing-4);
     }
-
+.secondary-container .secondary-images {
+    grid-template-columns: repeat(1,1fr);
 }
+.secondary-container aside {
+    text-align: center;
+    justify-content: center;
+}
+
+.features-container {
+    flex-wrap: wrap;
+}
+.features-bannar img{
+    width: 100%;
+}
+.features-container #experience {
+    left:25%
+}
+
+/* width rest */
+.sponsor-title {
+    width: 100%;
+}
+}
+

@@ -1,0 +1,148 @@
+:root {
+    /*-------------
+        Color 
+    -------------*/
+    --main-bg-color: rgba(255, 143, 14, 0.096);
+    --primary-color: hsla(32, 100%, 53%, 1);
+    --white: #fff;
+    --gray: rgba(150, 150, 150, 0.507);
+    --paragraph-color-1:hsla(0, 0%, 45%, 1);
+    /*-------------
+        size 
+    -------------*/
+    --fs-1: 1rem;
+    --fs-2: 1.1rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.5rem;
+    --fs-8: 8rem;
+
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+
+
+    --h1: 2.8rem;
+    --h2: 3rem;
+    --h3: 4rem;
+
+    --spacing-1: 1rem;
+    --spacing-1p5: 1.5rem;
+    --spacing-2p5: 2.5rem;
+    --spacing-2: 2rem;
+    --spacing-3: 3rem;
+    --spacing-4: 4rem;
+    --spacing-5: 5rem;
+    --spacing-6: 6rem;
+    --spacing-8: 8rem;
+}
+    /*-------------
+    Common styl start
+    -------------*/
+    .container {
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .fs-4 {
+        font-size: var(--fs-4);
+    }
+
+    .h1 {
+        font-size: var(--h1);
+        font-weight: var(--fw-700);
+    }
+    .h3 {
+        font-size: var(--h3);
+        font-weight: var(--fw-700);
+    }
+    .h4 {
+        font-size: var(--h);
+        font-weight: var(--fw-700);
+    }
+
+    .mt-1 {
+        margin-top: var(--spacing-1);
+    }
+    .mt-2 {
+        margin-top: var(--spacing-2);
+    }
+    .mt-3 {
+        margin-top: var(--spacing-3);
+    }
+    .mt-4 {
+        margin-top: var(--spacing-4);
+    }
+    .mt-5 {
+        margin-top: var(--spacing-5);
+    }
+    .mt-6 {
+        margin-top: var(--spacing-6);
+    }
+    .mt-8 {
+        margin-top: var(--spacing-8);
+    }
+
+    .mb-1 {
+        margin-bottom: var(--spacing-1);
+    }
+    .mb-1p5 {
+        margin-bottom: var(--spacing-1p5);
+    }
+    .mb-2 {
+        margin-bottom: var(--spacing-2);
+    }
+    .mb-2p5 {
+        margin-bottom: var(--spacing-2p5);
+    }
+    .mb-3 {
+        margin-bottom: var(--spacing-3);
+    }
+    .mb-4 {
+        margin-bottom: var(--spacing-4);
+    }
+    .mb-5 {
+        margin-bottom: var(--spacing-5);
+    }
+    .mb-6 {
+        margin-bottom: var(--spacing-6);
+    }
+    .mb-8 {
+        margin-bottom: var(--spacing-8);
+    }
+    .m-center {
+        margin: 0 auto;
+    }
+
+    .w-4 {
+        width: 40%;
+    }
+    .w-6 {
+        width: 60%;
+    }
+    .w-8 {
+        width: 80%;
+    }
+
+    .paragraph-style-1 {
+        font-size: var(--fs-1);
+        line-height: 1.5rem;
+        color: var(--paragraph-color-1);
+    }
+
+    .text-align-center {
+        text-align: center;
+    }
+
+    .btn {
+        border: none;
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        color: var(--white);
+        font-size: var(--fs-2);
+        font-weight: var(--fw-500);
+        padding: 20px 25px;
+    }
+    /*-----------------
+    Common styl end
+    ------------------*/
